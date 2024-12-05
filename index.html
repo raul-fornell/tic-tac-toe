@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        body {
+            padding: 50px;
+            background-color: black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        .grid-container span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 1px solid white;
+            color: white;
+            font-size: 40px;
+        }
+
+        .grid-container span.highlighted {
+            border: 1px solid red;
+        }
+
+        .grid-container.no-click span {
+            cursor: default;
+        }
+
+        button {
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game" class="grid-container"></div>
+    <button>Restart</button>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
