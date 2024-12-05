@@ -1,4 +1,4 @@
-#  Description
+# Description
 
 Simple Tic Tac Toc game played in turns.
 
@@ -14,9 +14,11 @@ Serve the index.html file from a web server with something similar to:
 
 And then visit <http://127.0.0.1:8080/> for example.
 
-###  Tests
+### Tests
 
-Execute custom unit tests running `npm run test`
+Execute custom unit tests running
+
+`npm run test`
 
 ### Game rules
 
